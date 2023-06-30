@@ -5,6 +5,7 @@ namespace MediaPlayer.Domain.src.Entity
         private readonly List<PlayList> _lists = new();
         private static readonly Lazy<User> lazyInstance = new(() => new User());
 
+    
         public string Name { get; set; } = string.Empty;
 
         private User() {}
@@ -27,6 +28,11 @@ namespace MediaPlayer.Domain.src.Entity
                 list.EmptyList(GetId);
             else
                 throw new ArgumentNullException("Playlist is not found");
+        }
+
+        public List<PlayList> GetAllLists()
+        {
+            return _lists;
         }
     }
 }
