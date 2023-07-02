@@ -1,6 +1,6 @@
 using MediaPlayer.Business.src.ServiceInterface;
 using MediaPlayer.Domain.src.Entity;
-using MediaPlayer.Domain.src.RespositoryInterface;
+using MediaPlayer.Domain.src.RepositoryInterface;
 
 namespace MediaPlayer.Business.src.Service
 {
@@ -20,27 +20,27 @@ namespace MediaPlayer.Business.src.Service
 
         public bool EmptyOneList(int listId, int userId)
         {
-            throw new NotImplementedException();
+            return _userRepository.EmptyOneList(listId, userId);
         }
 
         public IEnumerable<PlayList> GetAllList(int userId)
         {
-            throw new NotImplementedException();
+            return _userRepository.GetAllList(userId);
         }
 
         public PlayList GetListById(int listId)
         {
-            throw new NotImplementedException();
+            return _userRepository.GetListById(listId);
         }
 
         public bool RemoveAllLists(int userId)
         {
-            throw new NotImplementedException();
+            return _userRepository.RemoveAllLists(userId);
         }
 
         public bool RemoveOneList(int listId, int userId)
         {
-            throw new NotImplementedException();
+            return _userRepository.RemoveOneList(listId, userId);
         }
     }
 }
