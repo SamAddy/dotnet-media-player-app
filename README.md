@@ -78,7 +78,9 @@ The integration tests focus on testing the interaction between different compone
 
 Key integration tests include:
 
-* MediaServiceTests: Tests the MediaService class, which interacts with the media repository, for creating new files, deleting files, and retrieving files. 
+* MediaServiceTests: Tests the `MediaService class`, which interacts with the media repository, for creating new files, deleting files, and retrieving files. 
+* PlayListServiceTests: Tests the `PlayListService class`, which interacts with the playlist repository, for adding new files, emptying lists, and removing files. 
+* UserServiceTests: Tests the `UserService class`, which interacts with the user repository, for adding new list, empty list, get all lists and remove lists.
 
 ## Structure
 
