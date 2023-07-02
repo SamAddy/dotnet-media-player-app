@@ -8,7 +8,7 @@ namespace MediaPlayer.Domain.src.RespositoryInterface
         bool RemoveOneList(int playlistId, int userId);
         bool RemoveAllLists(int userId);
         bool EmptyOneList(int playlistId, int userId);
-        IEnumerable<User> GetAllList(int userId);
+        IEnumerable<PlayList> GetAllList(int userId);
         PlayList GetListById(int listId);
     }
 }
