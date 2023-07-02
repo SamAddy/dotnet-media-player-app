@@ -1,0 +1,14 @@
+using MediaPlayer.Domain.src.Entity;
+
+namespace MediaPlayer.Domain.src.RepositoryInterface
+{
+    public interface IUserRepository
+    {
+        PlayList AddNewList(string playlistName, int userId);
+        bool RemoveOneList(int playlistId, int userId);
+        bool RemoveAllLists(int userId);
+        bool EmptyOneList(int playlistId, int userId);
+        IEnumerable<PlayList> GetAllList(int userId);
+        PlayList GetListById(int listId);
+    }
+}
