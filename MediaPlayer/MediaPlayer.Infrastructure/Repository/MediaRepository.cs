@@ -1,5 +1,5 @@
 using MediaPlayer.Domain.src.Entity;
-using MediaPlayer.Domain.src.RespositoryInterface;
+using MediaPlayer.Domain.src.RepositoryInterface;
 
 namespace MediaPlayer.Infrastructure.Repository
 {

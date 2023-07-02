@@ -1,5 +1,5 @@
 using MediaPlayer.Domain.src.Entity;
-using MediaPlayer.Domain.src.RespositoryInterface;
+using MediaPlayer.Domain.src.RepositoryInterface;
 
 namespace MediaPlayer.Infrastructure.Repository
 {
@@ -36,13 +36,13 @@ namespace MediaPlayer.Infrastructure.Repository
             return false;
         }
 
-        public IEnumerable<User> GetAllList(int userId)
+        public IEnumerable<PlayList> GetAllList(int userId)
         {
             if (_userPlayLists.TryGetValue(userId, out var playLists))
             {
                 // return playLists.Select(playList => new User(userId, playList));
             }
-            return Enumerable.Empty<User>();
+            return Enumerable.Empty<PlayList>();
         }
 
         public PlayList GetListById(int listId)
